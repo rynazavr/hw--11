@@ -1,0 +1,89 @@
+/*AMAZING SERVICES BLOCK*/
+.amazing-services {
+  padding-top: 48px;
+  padding-bottom: 83px;
+}
+
+/*amazing services cards*/
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  &__item {
+    width: 381px;
+    margin-bottom: 94px;
+  }
+
+  &__item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+.services-list {
+  &__icon {
+    position: relative;
+    padding-left: 83px;
+    text-align: left;
+  }
+
+  &__ico-before::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: inline-block;
+    width: 83px;
+    height: 83px;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  &__item__icon-digital:before {
+    background-image: url(../images/abstract.png);
+  }
+}
+
+.item {
+  &__header {
+    font-family: $secondary-font;
+    font-size: 14px;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+  }
+
+  &__content {
+    line-height: 24px;
+  }
+
+  &__ico-before--photography:before {
+    background-image: url(../images/icons/alarm.svg);
+  }
+
+  &__ico-before--web:before {
+    background-image: url(../images/icons/line_graph.svg);
+  }
+
+  &__ico-befor--creativ:before {
+    background-image: url(../images/icons/computer.svg);
+  }
+
+  &__ico-before__icon-computer:before {
+    background-image: url(../images/icons/computer.svg);
+  }
+
+  &__ico-before--css:before {
+    background-image: url(../images/icons/home.svg);
+  }
+
+  &__ico-before--ceo:before {
+    background-image: url(../images/icons/book.svg);
+  }
+}
